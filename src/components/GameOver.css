@@ -1,0 +1,110 @@
+.game-over-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(239, 246, 255, 0.90);
+    backdrop-filter: blur(8px);
+    border-radius: 14px;
+    animation: fadeIn 0.3s ease-out;
+    z-index: 10;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.game-over-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 14px;
+    padding: 36px 48px;
+    background: #ffffff;
+    border: 1px solid #BFDBFE;
+    border-radius: 20px;
+    box-shadow:
+        0 8px 32px rgba(37, 99, 235, 0.12),
+        0 2px 8px rgba(0, 0, 0, 0.04);
+}
+
+.game-over-icon {
+    font-size: 2.4rem;
+    animation: bounce 0.6s ease;
+}
+
+@keyframes bounce {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+.game-over-title {
+    margin: 0;
+    font-size: 1.8rem;
+    font-weight: 900;
+    color: #1E40AF;
+    letter-spacing: 2px;
+}
+
+.game-over-score-row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2px;
+}
+
+.game-over-score-label {
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: #94A3B8;
+    text-transform: uppercase;
+}
+
+.game-over-score-value {
+    font-size: 2.4rem;
+    font-weight: 900;
+    color: #2563EB;
+}
+
+.game-over-btn {
+    margin-top: 6px;
+    padding: 14px 44px;
+    font-size: 1rem;
+    font-weight: 700;
+    color: #ffffff;
+    background: #2563EB;
+    border: none;
+    border-radius: 999px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    letter-spacing: 1px;
+}
+
+.game-over-btn:hover {
+    background: #1D4ED8;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(37, 99, 235, 0.35);
+}
+
+.game-over-btn:active {
+    transform: translateY(0);
+    background: #1E40AF;
+}

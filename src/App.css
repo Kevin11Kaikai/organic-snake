@@ -1,0 +1,40 @@
+.app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 48px 24px;
+  gap: 28px;
+}
+
+.app-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+.app-title {
+  margin: 0;
+  font-size: 2rem;
+  font-weight: 900;
+  letter-spacing: 2px;
+  color: #1D4ED8;
+}
+
+.app-main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.game-wrapper {
+  position: relative;
+}
+
+.app-footer {
+  font-size: 0.78rem;
+  color: #94A3B8;
+  letter-spacing: 1px;
+}

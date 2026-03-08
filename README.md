@@ -6,6 +6,19 @@ This project was developed using a **"Vibe Coding"** approach — leveraging adv
 
 ---
 
+## 🎬 Demo
+
+![Gameplay — 蓝色蛇在程序化草地上移动](assets/gameplay.png)
+
+<details>
+<summary>📹 点击展开操作录屏</summary>
+
+![Demo Recording](assets/demo.webp)
+
+</details>
+
+---
+
 ## 🚀 Core Technical Features
 
 ### Decoupled Architecture（逻辑与渲染解耦）
